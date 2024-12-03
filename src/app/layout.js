@@ -3,6 +3,7 @@ import "./globals.css";
 import HeaderTop from "./components/HeaderTop";
 import { HeaderMain } from "./components/HeaderMain";
 import { NavBar } from "./components/NavBar";
+import MobNavbar from "./components/MobNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <HeaderTop />
       <HeaderMain />
       <NavBar />
+      <MobNavbar />
     </html>
   );
 }
