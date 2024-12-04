@@ -1,9 +1,13 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import HeaderTop from "./components/HeaderTop";
-import { HeaderMain } from "./components/HeaderMain";
-import { NavBar } from "./components/NavBar";
+import HeaderMain from "./components/HeaderMain";
+import NavBar from "./components/NavBar";
 import MobNavbar from "./components/MobNavbar";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +19,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <body className={inter.className}>
-        {children}
-      </body> */}
       <HeaderTop />
       <HeaderMain />
       <NavBar />
