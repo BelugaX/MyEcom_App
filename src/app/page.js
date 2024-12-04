@@ -1,14 +1,14 @@
-import React from 'react'
-import Hero from './components/Hero'
-import NewProducts from './components/NewProducts'
+import Hero from "@/components/Hero";
+import NewProducts from "@/components/NewProducts";
+import Testimonial from "@/components/Testimonial";
+import Image from "next/image";
 
-const Home = () => {
+export default function Home() {
   return (
     <main>
       <Hero />
       <NewProducts />
+      <Testimonial />
     </main>
-  )
+  );
 }
-
-export default page
